@@ -13195,7 +13195,7 @@ void ImGui::DockNodeTreeUpdatePosSize(ImGuiDockNode* node, ImVec2 pos, ImVec2 si
 {
     // During the regular dock node update we write to all nodes.
     // 'only_write_to_marked_nodes' is only set when turning a node visible mid-frame and we need its size right-away.
-    IM_ASSERT(size.x > 0.0f && size.y > 0.0f);
+    //IM_ASSERT(size.x > 0.0f && size.y > 0.0f);
     const bool write_to_node = (only_write_to_marked_nodes == false) || (node->MarkedForPosSizeWrite);
     if (write_to_node)
     {
